@@ -104,7 +104,7 @@ app.delete("/api/persons/:id", (req, res) => {
 
 app.use(unknownEndpoint)
 
-const PORT = process.env.PORT || 3002
+const PORT = process.env.PORT
 app.listen(PORT, () => {
 	console.log(`Running in PORT ${PORT}`)
 })
